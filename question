@@ -1,0 +1,67 @@
+# Applied-Ai-ASSIGNMENT-1
+
+## Assignment 1 — K-Means Clustering
+"You are a data analyst at a retail company. Given a dataset of customer purchase history
+(annual income, spending score, age), implement K-Means clustering from scratch using Python.
+Determine the optimal number of clusters using the Elbow Method and Silhouette Score.
+Visualise the clusters using a 2D scatter plot and interpret which customer segment is most
+valuable to the business."
+What to implement: KMeans from sklearn.cluster, silhouette_score, matplotlib scatter plots,
+Elbow curve plotting.
+## Assignment 2 — DBSCAN for Anomaly Detection
+"A cybersecurity firm has collected network traffic logs with features such as packet size,
+connection duration, and request frequency. Using DBSCAN, identify anomalous (noisy) data
+points that could represent potential intrusions. Compare DBSCAN's cluster results with K-Means
+on the same dataset and explain why DBSCAN is better suited for this task."
+What to implement: DBSCAN from sklearn.cluster, eps and min_samples tuning, noise point
+extraction, side-by-side comparison plot.
+
+## Assignment 3 — PCA for Dimensionality Reduction
+"You are given the MNIST handwritten digit dataset (784 features per image). Apply PCA to
+reduce the dimensions to 2D and 50D. Plot the 2D projection coloured by digit class. Compute
+the cumulative explained variance and determine the minimum number of components needed
+to retain 95% of variance. Discuss the trade-off between information loss and computational
+efficiency."
+What to implement: PCA from sklearn.decomposition, explained_variance_ratio_, cumulative
+variance plot, matplotlib 2D scatter.
+
+## Assignment 4 — K-Means + PCA pipeline
+"Using the Iris dataset, first apply PCA to reduce features to 2 components, then apply K-Means
+clustering on the reduced data. Evaluate cluster purity against the true labels using the Adjusted
+Rand Index. Compare clustering performance before and after PCA. Visualise both pipelines side
+by side."
+What to implement: Pipeline from sklearn, adjusted_rand_score, before/after comparison.
+
+## Assignment 5 — Logistic Regression
+"A hospital wants to predict whether a patient has diabetes based on diagnostic measurements
+(Pima Indians Diabetes Dataset). Implement Logistic Regression with and without regularisation
+
+(L1, L2). Plot the ROC curve and compute AUC. Tune the regularisation parameter C using cross-
+validation and report precision, recall, and F1-score."
+
+What to implement: LogisticRegression with penalty, roc_curve, cross_val_score,
+classification_report.
+
+## Assignment 6 — Support Vector Machine (SVM)
+"You are given a binary classification problem on the Breast Cancer Wisconsin dataset. Train an
+SVM classifier using linear, polynomial, and RBF kernels. Plot the decision boundary for a 2-
+feature subset using PCA. Perform hyperparameter tuning on C and gamma using GridSearchCV
+and report the best configuration."
+What to implement: SVC from sklearn.svm, kernel comparison, GridSearchCV, decision
+boundary visualisation with mlxtend or manual mesh.
+
+## Assignment 7 — Random Forest Classifier
+"A financial institution wants to predict loan default risk. Using the LendingClub or a synthetic
+loan dataset, train a Random Forest model. Extract and plot feature importances. Compare
+performance at different n_estimators values. Implement Out-of-Bag (OOB) error estimation
+and plot learning curves."
+What to implement: RandomForestClassifier, feature_importances_, oob_score=True,
+learning_curve from sklearn.
+
+## Assignment 8 — Model Comparison: LR vs SVM vs Random Forest
+"Using the Heart Disease UCI dataset, train and evaluate Logistic Regression, SVM (RBF kernel),
+
+and Random Forest classifiers. For each model, report accuracy, precision, recall, F1, and AUC-
+ROC. Plot all three ROC curves on a single graph. Perform 5-fold stratified cross-validation.
+
+Present a final recommendation table."
